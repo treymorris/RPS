@@ -120,22 +120,22 @@ function game() {
 
     
 game();
-console.log(computerScore);
-console.log(playerScore);
-console.log(tie);
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
 game();
-console.log(computerScore);
-console.log(playerScore);
-console.log(tie);
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
 game();
-console.log(computerScore);
-console.log(playerScore);
-console.log(tie);
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
 game();
-console.log(computerScore);
-console.log(playerScore);
-console.log(tie);
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
 game();
-console.log(computerScore);
-console.log(playerScore);
-console.log(tie);
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
