@@ -22,15 +22,15 @@ function playerPlay() {
     let x = prompt("Rock, Paper, or Scissors?");
 
     return x.toLowerCase();
+   
 }
 
-
 //create function that declares winner of the round
-function playRound() {
+function playRound(playerSelection, computerSelection) {
 
-const computerSelection = computerPlay();
+ computerSelection = computerPlay();
 
-const playerSelection = playerPlay();
+ playerSelection = playerSelection; 
 
     
     if (computerSelection === playerSelection) {
@@ -64,8 +64,23 @@ const playerSelection = playerPlay();
 
 }
 
+const rockButton = document.getElementById('rock');
 
+rockButton.addEventListener('click', (e) => {
+    console.log(playRound(e.target.id, computerPlay));
+});
 
+const paperButton = document.getElementById('paper');
+
+paperButton.addEventListener('click', (e) => {
+    console.log(playRound(e.target.id, computerPlay));
+});
+
+const scissorsButton = document.getElementById('scissors');
+
+scissorsButton.addEventListener('click', (e) => {
+    console.log(playRound(e.target.id, computerPlay));
+});
 
 //create function that collects win data to keep score and declare winner or loser of five games
 let playerScore = 0;
@@ -117,9 +132,31 @@ function game() {
     
 }
     
-
+//create ui that allows player to click buttons for choice
     
-game();
+/*const btn1 = document.querySelector('#btn1');
+btn1.addEventListener('click', () => {
+    alert("You choose ROCK!");
+});
+
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+    alert("You choose PAPER!");
+});
+
+
+const btn3 = document.querySelector('#btn3');
+btn3.addEventListener('click', () => {
+    alert("You choose Scissors");
+});*/
+
+
+
+//game();
+console.log("Computer: ", computerScore);
+console.log("Player:   ", playerScore);
+console.log("Tie:      ", tie);
+/*game();
 console.log("Computer: ", computerScore);
 console.log("Player:   ", playerScore);
 console.log("Tie:      ", tie);
@@ -134,8 +171,4 @@ console.log("Tie:      ", tie);
 game();
 console.log("Computer: ", computerScore);
 console.log("Player:   ", playerScore);
-console.log("Tie:      ", tie);
-game();
-console.log("Computer: ", computerScore);
-console.log("Player:   ", playerScore);
-console.log("Tie:      ", tie);
+console.log("Tie:      ", tie);*/
