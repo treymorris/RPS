@@ -1,0 +1,25 @@
+.container {
+    width: 850px;
+    margin: auto;
+    background-color: grey
+}
+
+#rock {
+    color: red;
+}
+
+#paper {
+    color: blue;
+}
+
+#scissors {
+    color: green;
+}
+
+.displayDiv {
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+

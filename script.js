@@ -2,8 +2,39 @@ let playerScore = 0;
 let computerScore = 0;
 let tie = 0;
 
+const container = document.querySelector('.container');
 
+const displayDiv = document.createElement('div');
+displayDiv.classList.add('displayDiv');
+displayDiv.textContent = 'Ready to Play a Game?';
+displayDiv.style.color = 'red';
+displayDiv.style.backgroundColor = 'yellow';
 
+container.appendChild(displayDiv);
+
+const tieDiv = document.createElement('div');
+tieDiv.classList.add('tieDiv');
+tieDiv.textContent = 'Ties: ';
+
+container.appendChild(tieDiv);
+
+const cwDiv = document.createElement('div');
+cwDiv.classList.add('cwDiv');
+cwDiv.textContent = 'Computer: ';
+
+container.appendChild(cwDiv);
+
+const pwDiv = document.createElement('div');
+pwDiv.classList.add('pwDiv');
+pwDiv.textContent = 'Player: ';
+
+container.appendChild(pwDiv);
+
+const winnerDiv = document.createElement('div');
+winnerDiv.classList.add('winnerDiv');
+winnerDiv.textContent = 'Winner! : ';
+
+container.appendChild(winnerDiv);
 
 //create function to select choice for computer
 function computerPlay() {
