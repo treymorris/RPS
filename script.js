@@ -33,7 +33,6 @@ container.appendChild(pwDiv);
 
 const winnerDiv = document.createElement('div');
 winnerDiv.classList.add('winnerDiv');
-//winnerDiv.textContent = `Winner! : ${winner}`;
 
 container.appendChild(winnerDiv);
 
@@ -63,31 +62,31 @@ function playRound(playerSelection, computerSelection) {
     
     if (computerSelection === playerSelection) {
         tie++;
-        //return "It's a tie!";
+        displayDiv.textContent = "It's a tie!";
 
     }   else if (computerSelection === "rock" && playerSelection === "scissors") {
             computerScore++;
-            //return "Rock smashes Scissors, Computer Wins!";
+            displayDiv.textContent = "Rock smashes Scissors, Computer Wins!";
 
     }   else if (computerSelection === "rock" && playerSelection === "paper") {
             playerScore++;
-            //return "Paper covers Rock, You win!";
+            displayDiv.textContent = "Paper covers Rock, You win!";
 
     }   else if (computerSelection === "paper" && playerSelection === "rock") {
             computerScore++;
-            //return "Paper covers Rock, Computer Wins!";
+            displayDiv.textContent = "Paper covers Rock, Computer Wins!";
 
     }   else if (computerSelection === "paper" && playerSelection === "scissors") {
             playerScore++;
-            //return "Scissors cut Paper, You win!";
+            displayDiv.textContent = "Scissors cut Paper, You win!";
 
     }   else if (computerSelection === "scissors" && playerSelection === "rock") {
             playerScore++;
-            //return "Rock smashes Scissors, You win!";
+            displayDiv.textContent = "Rock smashes Scissors, You win!";
 
     }   else if (computerSelection === "scissors" && playerSelection === "paper") {
             computerScore++;
-            //return "Scissors cut Paper, Computer Wins!";
+            displayDiv.textContent = "Scissors cut Paper, Computer Wins!";
 
 }
 tieDiv.textContent = `Ties: ${tie}`;
